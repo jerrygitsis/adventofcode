@@ -1,0 +1,8 @@
+#!/bin/bash
+touch "./$1.py"; echo "import sys" > "./$1.py" 
+echo "from _ import _" >> "./$1.py" 
+echo "" >> "./$1.py" 
+echo "ans = 0" >> "./$1.py" 
+echo "" >> "./$1.py" 
+echo "sys.stdout.write(ans + '\n')" >> "./$1.py" 
+touch "./inputs/$1.txt"
