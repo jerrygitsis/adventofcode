@@ -1,0 +1,3 @@
+#!/bin/bash
+touch "./src/solutions/$1.ts"
+touch "./inputs/$1.txt"
