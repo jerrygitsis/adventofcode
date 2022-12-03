@@ -1,3 +1,7 @@
 #!/bin/bash
 touch "./src/solutions/$1.ts"
+echo "export const printSolution = (input: string[]) => {};" >> "./src/solutions/$1.ts"
 touch "./inputs/$1.txt"
+
+# TODO: need to be authenticated for this to work :( 
+# curl "https://adventofcode.com/2022/day/$1/input" -o "./inputs/$1.txt"
