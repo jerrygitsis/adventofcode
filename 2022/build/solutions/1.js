@@ -17,6 +17,6 @@ const printSolution = (input) => {
         }
     }, { localSum: 0, allSums: [] }).allSums.sort((a, b) => b - a);
     console.log(summedSortedCals[0]);
-    console.log(summedSortedCals.slice(0, 3).reduce((acc, cals) => acc + cals), 0);
+    console.log(summedSortedCals.slice(0, 3).reduce((acc, cals) => acc + cals, 0));
 };
 exports.printSolution = printSolution;
