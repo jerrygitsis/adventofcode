@@ -1,0 +1,8 @@
+#!/bin/bash
+touch "./src/solutions/$1.ts"
+echo "export const printSolution = (input: string[]) => {};" >> "./src/solutions/$1.ts"
+touch "./inputs/$1.txt"
+
+# session_cookie="53616c7465645f5fa551873726762794d88ac97ba30090a9c84d509cf003c94db55edb6bafa1a5e14a251e48dba586bc8b140a27b4b4ac3ead55a79d1d2dad01"
+# curl "https://adventofcode.com/2022/day/$1/input" 
+#     \ -o "./inputs/$1.txt" -H "cookie: session=$session_cookie"
